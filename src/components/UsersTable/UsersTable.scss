@@ -1,0 +1,18 @@
+.usersTable {
+  table-layout: fixed;
+
+  .thumbnailImage {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+  }
+
+  .loadingText {
+    animation: pulse 1.5s infinite;
+  }
+
+  .loadingText::after {
+    content: 'Loading';
+    animation: dotAnimation 1.5s infinite;
+  }
+}

@@ -1,0 +1,27 @@
+@import 'src/styles/global';
+
+.layoutWrapper {
+  display: flex;
+  flex-grow: 1;
+  height: calc(100vh - $topbar-height);
+  overflow-y: scroll;
+
+  &.sidebarOpen {
+    margin-left: $sidebar-width;
+
+    .mainContent {
+      width: calc(100% - $sidebar-width);
+      overflow-x: auto;
+    }
+  }
+
+  &.sidebarClosed {
+    transition: margin-left 0.3s ease-out;
+    margin-left: 0;
+
+    .mainContent {
+      width: 100%;
+      overflow-x: auto;
+    }
+  }
+}

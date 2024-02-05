@@ -1,0 +1,13 @@
+@import 'src/styles/global';
+
+.nationalityDropdown {
+  .resetOption {
+    color: $color-danger-red;
+    font-weight: bold;
+  }
+
+  .selectedNationality {
+    color: $color-selected-element;
+    background-color: $color-selected-background;
+  }
+}
